@@ -82,7 +82,7 @@ const Register = ({ navigation }: any) => {
         if (Object.values(tempErrors).some((error) => error !== '')) return;
 
         try {
-            const response = await axios.post('http://192.168.1.7:5000/api/signup', {
+            const response = await axios.post('http://192.168.8.184:5000/api/signup', {
                 username: UserName,
                 email,
                 password,
